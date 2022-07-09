@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Портфолио" />
+    <meta
+      name="words"
+      content="портфолио, дизайн, веб-студия, html, css, javascript, react, nodejs, сайт"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Портфолио - WebStudio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__logo logo" href="./index.html">
+          <span class="logo__accent">Web</span>Studio
+        </a>
+        <ul class="nav__page-links page-links">
+          <li class="page-links__item">
+            <a class="page-links__link" href="./index.html">Студия</a>
+          </li>
+          <li class="page-links__item">
+            <a class="page-links__link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="page-links__item">
+            <a class="page-links__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contact-links contact-links">
+        <li class="contact-links__item">
+          <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contact-links__item">
+          <a class="contact-links__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="portfolio">
+        <h1 class="visually-hidden">Портфолио</h1>
+        <ul class="portfolio__controls tab-controls">
+          <li class="tab-controls__item">
+            <button class="tab-controls__btn" type="button">Все</button>
+          </li>
+          <li class="tab-controls__item">
+            <button class="tab-controls__btn" type="button">Веб-сайты</button>
+          </li>
+          <li class="tab-controls__item">
+            <button class="tab-controls__btn" type="button">Приложения</button>
+          </li>
+          <li class="tab-controls__item">
+            <button class="tab-controls__btn" type="button">Дизайн</button>
+          </li>
+          <li class="tab-controls__item">
+            <button class="tab-controls__btn" type="button">Маркетинг</button>
+          </li>
+        </ul>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img01.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Технокряк</p>
+                <p class="project-card__type">Веб-сайт</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <div class="project-card">
+              <figure class="project-card">
+                <img
+                  class="project-card__img"
+                  src="./images/portfolio/img02.jpg"
+                  alt="Сотрудник"
+                  width="370"
+                />
+                <figcaption class="project-card__desc">
+                  <p class="project-card__name">Постер New Orlean vs Golden Star</p>
+                  <p class="project-card__type">Дизайн</p>
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img03.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Ресторан Seafood</p>
+                <p class="project-card__type">Приложение</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img04.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Проект Prime</p>
+                <p class="project-card__type">Маркетинг</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img05.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Проект Boxes</p>
+                <p class="project-card__type">Приложение</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img06.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Inspiration has no Borders</p>
+                <p class="project-card__type">Веб-сайт</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img07.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Издание Limited Edition</p>
+                <p class="project-card__type">Дизайн</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img08.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Проект LAB</p>
+                <p class="project-card__type">Маркетинг</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="portfolio__item">
+            <figure class="project-card">
+              <img
+                class="project-card__img"
+                src="./images/portfolio/img09.jpg"
+                alt="Сотрудник"
+                width="370"
+              />
+              <figcaption class="project-card__desc">
+                <p class="project-card__name">Growing Business</p>
+                <p class="project-card__type">Приложение</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+      <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+      <ul class="footer__contact-links contact-links">
+        <li class="contact-links__item">
+          <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="contact-links__item">
+          <a class="contact-links__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
