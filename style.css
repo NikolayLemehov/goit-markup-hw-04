@@ -132,9 +132,16 @@ p {
 }
 
 /* homepage main */
+.section--mb {
+  margin-bottom: 94px;
+}
+
+
 .section__title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
 
 .hero {
@@ -175,6 +182,18 @@ p {
   color: var(--color-active);
 }
 
+.promo__list {
+  --gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.promo__item {
+  --columns: 4;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}
+
 .promo-card__title {
   font-weight: 700;
   font-size: 14px;
@@ -188,19 +207,32 @@ p {
 }
 
 .we-do__list {
+  --gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--gap);
+}
+
+.we-do__item {
+  --columns: 3;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
 }
 
 .team {
+  padding: 94px 0;
   background-color: var(--color-light-2);
 }
 
 .team__list {
+  --gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: var(--gap);
+}
+
+.team__item {
+  --columns: 4;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
 }
 
 .employee-card {
@@ -209,10 +241,7 @@ p {
   border-radius: 0 0 4px 4px;
 }
 
-.employee-card__desc {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.employee-card__content {
   padding: 30px;
   font-size: 16px;
   line-height: 1.19;
@@ -220,6 +249,7 @@ p {
 }
 
 .employee-card__name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
