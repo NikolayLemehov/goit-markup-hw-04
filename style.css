@@ -127,8 +127,16 @@ p {
   gap: 15px 50px;
 }
 
+.contact-links--footer {
+  display: block;
+}
+
 .contact-links__link {
   color: var(--color-light-text);
+}
+
+.contact-links__item--footer:not(:last-of-type) {
+  margin-bottom: 9px;
 }
 
 /* homepage main */
@@ -328,14 +336,17 @@ p {
 
 /* footer */
 .footer {
+  padding: 60px 0;
   background-color: var(--color-dark-bg);
 }
 
 .footer__logo {
+  margin-bottom: 20px;
   color: var(--color-white);
 }
 
 .footer__address {
+  margin-bottom: 9px;
   line-height: 1.71;
   font-style: normal;
   color: var(--color-white);
