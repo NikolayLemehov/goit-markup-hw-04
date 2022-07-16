@@ -17,6 +17,8 @@ body {
   background-color: var(--color-white);
 }
 
+/* utils */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -46,15 +48,40 @@ p {
   margin-bottom: 0;
 }
 
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* header */
 .header {
   display: flex;
+  min-height: 80px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: auto;
 }
 
 .nav {
   display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  margin-right: 93px;
 }
 
 .logo {
+  display: block;
   font-family: "Raleway", Arial, sans-serif;
   text-decoration: none;
   font-weight: 700;
@@ -69,8 +96,7 @@ p {
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
+  gap: 15px 50px;
 }
 
 .nav-links__link,
@@ -82,6 +108,8 @@ p {
 }
 
 .nav-links__link {
+  display: block;
+  padding: 8px 0;
   color: inherit;
 }
 
@@ -96,7 +124,7 @@ p {
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 15px 50px;
 }
 
 .contact-links__link {

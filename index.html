@@ -11,35 +11,40 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet" />
     <link href="./style.css" rel="stylesheet"/>
   </head>
 
   <body>
     <header class="header">
-      <nav class="nav">
-        <a class="nav__logo logo" href="./index.html">
-          <span class="logo__accent">Web</span>Studio
-        </a>
-        <ul class="nav__nav-links nav-links list">
-          <li class="nav-links__item">
-            <a class="nav-links__link current" href="./index.html">Студия</a>
+      <div class="header__container container">
+        <nav class="header__nav nav">
+          <a class="nav__logo logo" href="./index.html">
+            <span class="logo__accent">Web</span>Studio
+          </a>
+          <ul class="nav__nav-links nav-links list">
+            <li class="nav-links__item">
+              <a class="nav-links__link current" href="./index.html">Студия</a>
+            </li>
+            <li class="nav-links__item">
+              <a class="nav-links__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-links__item">
+              <a class="nav-links__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__contact-links contact-links list">
+          <li class="contact-links__item">
+            <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li class="nav-links__item">
-            <a class="nav-links__link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-links__item">
-            <a class="nav-links__link" href="#">Контакты</a>
+          <li class="contact-links__item">
+            <a class="contact-links__link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header__contact-links contact-links list">
-        <li class="contact-links__item">
-          <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="contact-links__item">
-          <a class="contact-links__link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
