@@ -11,12 +11,12 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Портфолио - WebStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link href="./style.css" rel="stylesheet" />
-    <title>Портфолио - WebStudio</title>
   </head>
   <body>
     <header class="header">
@@ -24,19 +24,19 @@
         <a class="nav__logo logo" href="./index.html">
           <span class="logo__accent">Web</span>Studio
         </a>
-        <ul class="nav__page-links page-links">
-          <li class="page-links__item">
-            <a class="page-links__link" href="./index.html">Студия</a>
+        <ul class="nav__nav-links nav-links list">
+          <li class="nav-links__item">
+            <a class="nav-links__link" href="./index.html">Студия</a>
           </li>
-          <li class="page-links__item">
-            <a class="page-links__link" href="./portfolio.html">Портфолио</a>
+          <li class="nav-links__item">
+            <a class="nav-links__link current" href="./portfolio.html">Портфолио</a>
           </li>
-          <li class="page-links__item">
-            <a class="page-links__link" href="#">Контакты</a>
+          <li class="nav-links__item">
+            <a class="nav-links__link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
-      <ul class="header__contact-links contact-links">
+      <ul class="header__contact-links contact-links list">
         <li class="contact-links__item">
           <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
@@ -48,9 +48,9 @@
     <main>
       <section class="portfolio">
         <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="portfolio__controls tab-controls">
+        <ul class="portfolio__controls tab-controls list">
           <li class="tab-controls__item">
-            <button class="tab-controls__btn" type="button">Все</button>
+            <button class="tab-controls__btn current" type="button">Все</button>
           </li>
           <li class="tab-controls__item">
             <button class="tab-controls__btn" type="button">Веб-сайты</button>
@@ -65,142 +65,144 @@
             <button class="tab-controls__btn" type="button">Маркетинг</button>
           </li>
         </ul>
-        <ul class="portfolio__list">
+        <ul class="portfolio__list list">
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img01.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Технокряк</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Технокряк</h2>
                 <p class="project-card__type">Веб-сайт</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
             <div class="project-card">
-              <figure class="project-card">
+              <div class="project-card">
                 <img
                   class="project-card__img"
                   src="./images/portfolio/img02.jpg"
                   alt="Сотрудник"
                   width="370"
                 />
-                <figcaption class="project-card__desc">
-                  <p class="project-card__name">Постер New Orlean vs Golden Star</p>
+                <div class="project-card__desc">
+                  <h2 class="project-card__name">Постер New Orlean vs Golden Star</h2>
                   <p class="project-card__type">Дизайн</p>
-                </figcaption>
-              </figure>
+                </div>
+              </div>
             </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img03.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Ресторан Seafood</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Ресторан Seafood</h2>
                 <p class="project-card__type">Приложение</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img04.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Проект Prime</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Проект Prime</h2>
                 <p class="project-card__type">Маркетинг</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img05.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Проект Boxes</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Проект Boxes</h2>
                 <p class="project-card__type">Приложение</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img06.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Inspiration has no Borders</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Inspiration has no Borders</h2>
                 <p class="project-card__type">Веб-сайт</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img07.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Издание Limited Edition</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Издание Limited Edition</h2>
                 <p class="project-card__type">Дизайн</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img08.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
-                <p class="project-card__name">Проект LAB</p>
+              <div class="project-card__desc">
+                <h2 class="project-card__name">Проект LAB</h2>
                 <p class="project-card__type">Маркетинг</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
           <li class="portfolio__item">
-            <figure class="project-card">
+            <div class="project-card">
               <img
                 class="project-card__img"
                 src="./images/portfolio/img09.jpg"
                 alt="Сотрудник"
                 width="370"
               />
-              <figcaption class="project-card__desc">
+              <div class="project-card__desc">
                 <p class="project-card__name">Growing Business</p>
                 <p class="project-card__type">Приложение</p>
-              </figcaption>
-            </figure>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__logo logo" href="./index.html"><span class="logo__accent">Web</span>Studio</a>
+      <a class="footer__logo logo" href="./index.html">
+        <span class="logo__accent">Web</span>Studio
+      </a>
       <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
-      <ul class="footer__contact-links contact-links">
+      <ul class="footer__contact-links contact-links list">
         <li class="contact-links__item">
           <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>

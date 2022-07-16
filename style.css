@@ -1,8 +1,9 @@
 :root {
-  --color-transparent: rgba(0, 0, 0, 0);
   --color-black: #000;
   --color-white: #fff;
+  --color-white-60: rgba(255, 255, 255, 0.6);
   --color-main-text: #212121;
+  --color-dark-bg: #2f303a;
   --color-light-text: #757575;
   --color-light-2: #f5f4fa;
   --color-active: #2196f3;
@@ -10,8 +11,10 @@
 
 body {
   font-family: "Roboto", Arial, sans-serif;
-  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--color-main-text);
+  background-color: var(--color-white);
 }
 
 .visually-hidden {
@@ -20,18 +23,31 @@ body {
   height: 1px;
   margin: -1px;
   clip: rect(0 0 0 0);
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header {
   display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.header__contact-links {
-  color: var(--color-light-text);
 }
 
 .nav {
@@ -44,7 +60,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--color-black);
 }
 
@@ -52,65 +67,71 @@ body {
   color: var(--color-active);
 }
 
-.page-links {
-  list-style: none;
+.nav-links {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
-.page-links__link {
+.nav-links__link,
+.contact-links__link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--color-main-text);
 }
 
-.page-links__link:hover,
-.page-links__link:focus {
+.nav-links__link {
+  color: inherit;
+}
+
+.nav-links__link.current,
+.nav-links__link:hover,
+.nav-links__link:focus,
+.contact-links__link:hover,
+.contact-links__link:focus {
   color: var(--color-active)
 }
 
 .contact-links {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
 }
 
 .contact-links__link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.contact-links__link:hover,
-.contact-links__link:focus {
-  color: var(--color-active)
+  color: var(--color-light-text);
 }
 
 /* homepage main */
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--color-white);
-  background-color: #2f303a;
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
-.intro__title {
+.hero {
+  background-color: var(--color-dark-bg);
+}
+
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--color-white);
 }
 
-.intro__btn {
+.hero__btn {
+  font-family: inherit;
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: inherit;
+  color: var(--color-white);
   background-color: var(--color-active);
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -118,41 +139,25 @@ body {
   cursor: pointer;
 }
 
-.intro__btn:hover,
-.intro__btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--color-light-2);
   color: var(--color-active);
-}
-
-.promo__list {
-  list-style: none;
 }
 
 .promo-card__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .promo-card__desc {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-light-text);
 }
 
-.we-do__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .we-do__list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -162,23 +167,13 @@ body {
   background-color: var(--color-light-2);
 }
 
-.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
 .team__list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .employee-card {
-  margin: 0;
   background: var(--color-white);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
@@ -192,29 +187,30 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .employee-card__name {
-  margin: 0;
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 .employee-card__position {
-  margin: 0;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
   color: var(--color-light-text);
 }
 
 /* portfolio main */
 .tab-controls {
-  list-style: none;
   display: flex;
   column-gap: 10px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
 }
 
 .tab-controls__btn {
@@ -223,8 +219,13 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
 }
 
+.tab-controls__btn.current,
 .tab-controls__btn:hover,
 .tab-controls__btn:focus {
   color: var(--color-white);
@@ -233,7 +234,6 @@ body {
 }
 
 .portfolio__list {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -251,37 +251,37 @@ body {
 .project-card__desc {
   padding: 20px 24px;
   border: 1px solid #eee;
-  border-top-color: var(--color-transparent);
+  border-top-color: transparent;
 }
 
 .project-card__name {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--color-main-text);
 }
 
 .project-card__type {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--color-light-text);
 }
 
 /* footer */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--color-dark-bg);
+}
+
+.footer__logo {
+  color: var(--color-white);
 }
 
 .footer__address {
-  font-size: 14px;
   line-height: 1.71;
   font-style: normal;
-  letter-spacing: 0.03em;
   color: var(--color-white);
 }
 
 .footer__contact-links {
-  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  color: var(--color-white-60);
 }
