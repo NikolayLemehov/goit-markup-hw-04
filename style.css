@@ -272,8 +272,24 @@ p {
 }
 
 /* portfolio main */
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio__container {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+.portfolio__controls {
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .tab-controls {
   display: flex;
+  justify-content: center;
   column-gap: 10px;
 
   font-weight: 500;
@@ -302,10 +318,16 @@ p {
 }
 
 .portfolio__list {
+  --gap: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: var(--gap);
+}
+
+.portfolio__item {
+  --columns: 3;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
 }
 
 .project-card {
@@ -314,6 +336,8 @@ p {
 
 .project-card__img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .project-card__desc {
@@ -323,6 +347,7 @@ p {
 }
 
 .project-card__name {
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
