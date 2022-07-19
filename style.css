@@ -153,9 +153,15 @@ p {
 }
 
 .hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 200px 0;
   text-align: center;
   background-color: var(--color-dark-bg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero__title {
@@ -202,7 +208,23 @@ p {
   width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
 }
 
+.promo__icon-wrapper {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--color-light-2);
+  border-radius: 4px;
+}
+
+.promo__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}
+
 .promo-card__title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
