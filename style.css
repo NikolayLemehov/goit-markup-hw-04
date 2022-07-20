@@ -1,12 +1,14 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
+  --color-white-10: rgba(255, 255, 255, 0.1);
   --color-white-60: rgba(255, 255, 255, 0.6);
   --color-main-text: #212121;
   --color-dark-bg: #2f303a;
   --color-light-text: #757575;
   --color-light-2: #f5f4fa;
   --color-active: #2196f3;
+  --color-icon-1: #afb1b8;
 }
 
 body {
@@ -54,6 +56,37 @@ p {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+/* social */
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: inherit;
+  background-color: var(--color-white-10);
+}
+
+.social--main .social__link {
+  color: var(--color-icon-1);
+}
+
+.social__link:hover {
+  color: var(--color-white);
+  background-color: var(--color-active);
+}
+
+.social__svg {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
 }
 
 /* header */
@@ -125,6 +158,17 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 50px;
+}
+
+.contact-links__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-links__icon {
+  width: 16px;
+  height: 16px;
 }
 
 .contact-links--footer {
@@ -287,10 +331,37 @@ p {
 }
 
 .employee-card__position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--color-light-text);
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--color-icon-1);
+  border-radius: 4px;
+  color: var(--color-icon-1);
+}
+
+.clients__link:hover {
+  border: 1px solid var(--color-active);
+  color: var(--color-active);
+}
+
+.clients__svg {
+  display: block;
+  width: 106px;
+  height: 60px;
+  margin: auto;
 }
 
 /* portfolio main */
@@ -384,22 +455,37 @@ p {
 /* footer */
 .footer {
   padding: 60px 0;
+  color: var(--color-white);
   background-color: var(--color-dark-bg);
+}
+
+.footer__container {
+  display: flex;
+  gap: 70px;
 }
 
 .footer__logo {
   margin-bottom: 20px;
-  color: var(--color-white);
+  color: inherit;
 }
 
 .footer__address {
   margin-bottom: 9px;
   line-height: 1.71;
   font-style: normal;
-  color: var(--color-white);
 }
 
 .footer__contact-links {
   line-height: 1.71;
   color: var(--color-white-60);
+}
+
+.footer__col--social {
+  padding-top: 12px;
+}
+
+.footer__social-motto {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
