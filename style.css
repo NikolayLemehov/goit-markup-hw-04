@@ -77,7 +77,8 @@ p {
   color: var(--color-icon-1);
 }
 
-.social__link:hover {
+.social__link:hover,
+.social__link:focus {
   color: var(--color-white);
   background-color: var(--color-active);
 }
@@ -352,7 +353,8 @@ p {
   color: var(--color-icon-1);
 }
 
-.clients__link:hover {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--color-active);
   color: var(--color-active);
 }
@@ -424,7 +426,13 @@ p {
 }
 
 .project-card {
+  display: block;
   margin: 0;
+}
+
+.project-card:hover,
+.project-card:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-card__img {
