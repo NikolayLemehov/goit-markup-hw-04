@@ -1,5 +1,7 @@
 :root {
   --color-black: #000;
+  --color-black-10: rgba(0, 0, 0, 0.1); /* #000 */
+  --color-black-20: rgba(0, 0, 0, 0.2); /* #000 */
   --color-white: #fff;
   --color-white-10: rgba(255, 255, 255, 0.1);
   --color-white-60: rgba(255, 255, 255, 0.6);
@@ -559,4 +561,64 @@ p {
   margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+/* modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-black-20);
+  opacity: 1;
+  transition: opacity var(--transition);
+}
+
+[data-modal].is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+  position: relative;
+  width: 528px;
+  height: 581px;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: scale(1);
+  transition: transform var(--transition);
+}
+
+[data-modal].is-hidden .modal {
+  transform: scale(0.9)
+}
+
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-black-10);
+  border-radius: 50%;
+  color: var(--color-black);
+  background-color: transparent;
+}
+
+.modal__close-svg {
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: auto;
 }
