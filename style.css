@@ -573,12 +573,13 @@ p {
   left: 0;
   background-color: var(--color-black-20);
   opacity: 1;
-  transition: opacity var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 
 [data-modal].is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop__modal {
@@ -607,7 +608,6 @@ p {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
   width: 30px;
   height: 30px;
   border: 1px solid var(--color-black-10);
@@ -617,8 +617,11 @@ p {
 }
 
 .modal__close-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: block;
   width: 11px;
   height: 11px;
-  margin: auto;
 }
