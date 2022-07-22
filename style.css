@@ -553,11 +553,11 @@ p {
   color: var(--color-white-60);
 }
 
-.footer__col--social {
+.footer__col--pt {
   padding-top: 12px;
 }
 
-.footer__social-motto {
+.footer__title {
   margin-bottom: 20px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -624,4 +624,54 @@ p {
   display: block;
   width: 11px;
   height: 11px;
+}
+
+/* form */
+
+.form__row {
+  display: flex;
+  gap: 12px;
+}
+
+.form__submit-btn {
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-active);
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.form__submit-btn:hover,
+.form__submit-btn:focus {
+  color: var(--color-active);
+  background-color: var(--color-white);
+}
+
+.field__input {
+  padding: 15px 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: inherit;
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: border-color var(--transition);
+}
+
+.field__input:hover,
+.field__input:focus {
+  border-color: var(--color-active);
+}
+
+.field__input::placeholder {
+  color: var(--color-white-60);
 }
