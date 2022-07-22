@@ -57,9 +57,9 @@
     </header>
     <main>
       <section class="hero section section--mb">
-        <div class="container">
+        <div class="hero__container container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn hero__btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <section class="promo section section--mb">
@@ -402,8 +402,11 @@
                 <label class="form__field field">
                   <input class="field__input" type="email" name="email" placeholder="E-mail">
                 </label>
-                <button class="form__submit-btn" type="submit">
+                <button class="btn" type="submit">
                   Подписаться
+                  <svg class="btn__icon">
+                    <use href="./images/icons.svg#icon-send"/>
+                  </svg>
                 </button>
               </div>
             </div>
