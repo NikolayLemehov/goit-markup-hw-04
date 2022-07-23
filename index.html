@@ -395,12 +395,12 @@
           </ul>
         </div>
         <div class="footer__col footer__col--pt">
-          <form class="form">
-            <div class="form__group" role="group">
+          <form class="form-subscribe">
+            <div class="form-subscribe__group" role="group">
               <p class="footer__title">Подпишитесь на рассылку</p>
-              <div class="form__row">
-                <label class="form__field field">
-                  <input class="field__input" type="email" name="email" placeholder="E-mail">
+              <div class="form-subscribe__row">
+                <label class="form-subscribe__field field-subscribe">
+                  <input class="field-subscribe__input" type="email" name="email" placeholder="E-mail">
                 </label>
                 <button class="btn" type="submit">
                   Подписаться
@@ -422,6 +422,66 @@
               <use href="./images/icons.svg#icon-close"/>
             </svg>
           </button>
+          <form class="form-callback" autocomplete="off">
+            <h2 class="form-callback__title">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="form-callback__main-group">
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <input type="text" class="field-callback__input" name="name">
+                  <span class="field-callback__label">Имя</span>
+                  <svg class="field-callback__icon">
+                    <use href="./images/icons.svg#icon-form-person"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <input type="tel" class="field-callback__input" name="phone">
+                  <span class="field-callback__label">Телефон</span>
+                  <svg class="field-callback__icon">
+                    <use href="./images/icons.svg#icon-form-phone"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <input type="email" class="field-callback__input" name="email">
+                  <span class="field-callback__label">Почта</span>
+                  <svg class="field-callback__icon">
+                    <use href="./images/icons.svg#icon-form-email"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <textarea
+                    class="field-callback__input field-callback__input--text-area"
+                    name="comment" placeholder="Введите текст"></textarea>
+                  <span class="field-callback__label">Почта</span>
+                </label>
+              </div>
+            </div>
+            <p class="form-callback__agreement checkbox-callback">
+              <label class="checkbox-callback__label-wrapper">
+                <input class="checkbox-callback__input visually-hidden" type="checkbox" name="agreement">
+                <span class="checkbox-callback__icon">
+                  <svg class="checkbox-callback__svg checkbox-callback__svg--checked">
+                    <use href="./images/icons.svg#icon-form-checked"/>
+                  </svg>
+                  <svg class="checkbox-callback__svg checkbox-callback__svg--unchecked">
+                    <use href="./images/icons.svg#icon-form-unchecked"/>
+                  </svg>
+                </span>
+                <span class="checkbox-callback__label">
+                  Соглашаюсь с рассылкой и принимаю
+                </span>
+              </label>
+              <a class="checkbox-callback__link" href="#" target="_blank">Условия договора</a>
+            </p>
+            <button class="form-callback__btn btn">
+              Отправить
+            </button>
+          </form>
         </div>
       </div>
     </div>
