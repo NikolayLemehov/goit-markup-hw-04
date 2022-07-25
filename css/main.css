@@ -7,10 +7,7 @@
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.contact-links__link:hover,
-.contact-links__link:focus, .nav-links__link.current,
-.nav-links__link:hover,
-.nav-links__link:focus {
+.contact-links__link:hover, .contact-links__link:focus, .nav-links__link.current, .nav-links__link:hover, .nav-links__link:focus {
   color: #2196f3;
 }
 
@@ -72,18 +69,18 @@ p {
   transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, visibility cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-[data-modal].is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
-
 .backdrop__modal {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+[data-modal].is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .btn {
@@ -115,9 +112,7 @@ p {
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: #f5f4fa;
   color: #2196f3;
 }
@@ -148,13 +143,10 @@ p {
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 .social--main .social__link {
   color: #afb1b8;
 }
-
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   color: #fff;
   background-color: #2196f3;
 }
@@ -263,10 +255,7 @@ p {
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.tab-controls__btn.current,
-.tab-controls__btn:hover,
-.tab-controls__btn:focus {
+.tab-controls__btn.current, .tab-controls__btn:hover, .tab-controls__btn:focus {
   color: #fff;
   background-color: #2196f3;
   -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
@@ -283,9 +272,7 @@ p {
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.project-card:hover,
-.project-card:focus {
+.project-card:hover, .project-card:focus {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -312,9 +299,7 @@ p {
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.project-card:hover .project-card__overlay,
-.project-card:focus .project-card__overlay {
+.project-card:hover .project-card__overlay, .project-card:focus .project-card__overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
@@ -367,7 +352,6 @@ p {
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 [data-modal].is-hidden .modal {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
@@ -387,9 +371,7 @@ p {
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   cursor: pointer;
 }
-
-.modal__close:hover,
-.modal__close:focus {
+.modal__close:hover, .modal__close:focus {
   color: #2196f3;
 }
 
@@ -427,9 +409,7 @@ p {
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.form-subscribe__submit-btn:hover,
-.form-subscribe__submit-btn:focus {
+.form-subscribe__submit-btn:hover, .form-subscribe__submit-btn:focus {
   color: #2196f3;
   background-color: #fff;
 }
@@ -447,28 +427,21 @@ p {
   -webkit-transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.field-subscribe__input:hover,
-.field-subscribe__input:focus {
+.field-subscribe__input:hover, .field-subscribe__input:focus {
   border-color: #2196f3;
 }
-
 .field-subscribe__input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .field-subscribe__input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .field-subscribe__input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .field-subscribe__input::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-
 .field-subscribe__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -542,34 +515,26 @@ p {
   -webkit-transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.field-callback__label-wrapper:hover .field-callback__input,
-.field-callback__label-wrapper:focus-within .field-callback__input {
+.field-callback__label-wrapper:hover .field-callback__input, .field-callback__label-wrapper:focus-within .field-callback__input {
   border-color: #2196f3;
 }
-
 .field-callback__input--text-area {
   height: 120px;
   padding-left: 16px;
   resize: none;
 }
-
 .field-callback__input::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .field-callback__input::-moz-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .field-callback__input:-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .field-callback__input::-ms-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
-
 .field-callback__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -587,9 +552,7 @@ p {
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.field-callback__label-wrapper:hover .field-callback__icon,
-.field-callback__label-wrapper:focus-within .field-callback__icon {
+.field-callback__label-wrapper:hover .field-callback__icon, .field-callback__label-wrapper:focus-within .field-callback__icon {
   color: #2196f3;
 }
 
@@ -616,7 +579,6 @@ p {
   -webkit-transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 .checkbox-callback__input:not(:checked) + .checkbox-callback__icon {
   background-color: #fff;
 }
@@ -633,11 +595,9 @@ p {
   -webkit-transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 .checkbox-callback__input:checked + .checkbox-callback__icon .checkbox-callback__svg--unchecked {
   opacity: 0;
 }
-
 .checkbox-callback__input:not(:checked) + .checkbox-callback__icon .checkbox-callback__svg--unchecked {
   opacity: 1;
 }
@@ -648,9 +608,7 @@ p {
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   outline: none;
 }
-
-.checkbox-callback__link:hover,
-.checkbox-callback__link:focus {
+.checkbox-callback__link:hover, .checkbox-callback__link:focus {
   color: #000;
 }
 
@@ -777,9 +735,7 @@ p {
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border-color: #2196f3;
   color: #2196f3;
 }
@@ -905,7 +861,6 @@ p {
   padding: 31px 0;
   color: inherit;
 }
-
 .nav-links__link::after {
   content: "";
   position: absolute;
@@ -923,13 +878,11 @@ p {
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: transform cubic-bezier(0.4, 0, 0.2, 1) 250ms, opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, -webkit-transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
-
 .nav-links__link.current::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   opacity: 1;
 }
-
 .contact-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -937,6 +890,9 @@ p {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 15px 50px;
+}
+.contact-links--footer {
+  display: block;
 }
 
 .contact-links__link {
@@ -949,14 +905,9 @@ p {
   gap: 10px;
   color: #757575;
 }
-
 .contact-links__icon {
   width: 16px;
   height: 16px;
-}
-
-.contact-links--footer {
-  display: block;
 }
 
 .contact-links__item--footer:not(:last-of-type) {

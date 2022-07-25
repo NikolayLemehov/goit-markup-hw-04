@@ -10,7 +10,8 @@ source/css/*.css
 source/css/*.map
 Thumbs.db
 package.json
-
+sass/**/*.css
+sass/**/*.css.map
 # Logs
 logs
 *.log
