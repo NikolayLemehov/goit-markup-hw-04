@@ -1,7 +1,7 @@
 .form-callback {
   display: flex;
   flex-direction: column;
-  color: var(--color-light-text);
+  color: $color-light-text;
 }
 
 .form-callback__title {

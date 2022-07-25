@@ -10,16 +10,16 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   border: none;
-  color: var(--color-white);
-  background-color: var(--color-active);
+  color: $color-white;
+  background-color: $color-active;
   cursor: pointer;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  transition: color var(--transition), background-color var(--transition);
+  transition: color $transition, background-color $transition;
 }
 
 .form-subscribe__submit-btn:hover,
 .form-subscribe__submit-btn:focus {
-  color: var(--color-active);
-  background-color: var(--color-white);
+  color: $color-active;
+  background-color: $color-white;
 }

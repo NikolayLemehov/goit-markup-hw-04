@@ -3,9 +3,9 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color var(--transition);
+  transition: color $transition;
 }
 
 %header-link-active {
-  color: var(--color-active);
+  color: $color-active;
 }

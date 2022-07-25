@@ -4,9 +4,9 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--color-black-20);
+  background-color: rgba($color-black, 0.2);
   opacity: 1;
-  transition: opacity var(--transition), visibility var(--transition);
+  transition: opacity $transition, visibility $transition;
 }
 
 [data-modal].is-hidden {

@@ -1,7 +1,7 @@
 .footer {
   padding: 60px 0;
-  color: var(--color-white);
-  background-color: var(--color-dark-bg);
+  color: $color-white;
+  background-color: $color-dark-bg;
 }
 
 .footer__container {
@@ -22,7 +22,7 @@
 
 .footer__contact-links {
   line-height: 1.71;
-  color: var(--color-white-60);
+  color: rgba($color-white, 0.6);
 }
 
 .footer__col--pt {

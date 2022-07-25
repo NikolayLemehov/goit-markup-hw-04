@@ -11,19 +11,19 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
   text-align: center;
-  color: var(--color-white);
-  background-color: var(--color-active);
+  color: $color-white;
+  background-color: $color-active;
   border: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  transition: color var(--transition), background-color var(--transition);
+  transition: color $transition, background-color $transition;
 }
 
 .btn:hover,
 .btn:focus {
-  background-color: var(--color-light-2);
-  color: var(--color-active);
+  background-color: $color-light-2;
+  color: $color-active;
 }
 
 .btn__icon {

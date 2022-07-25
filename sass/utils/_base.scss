@@ -2,8 +2,8 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
-  color: var(--color-main-text);
-  background-color: var(--color-white);
+  color: $color-main-text;
+  background-color: $color-white;
 }
 
 .visually-hidden {
