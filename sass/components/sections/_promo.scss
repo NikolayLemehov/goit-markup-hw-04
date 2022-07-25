@@ -1,0 +1,26 @@
+.promo__list {
+  --gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.promo__item {
+  --columns: 4;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}
+
+.promo__icon-wrapper {
+  display: flex;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--color-light-2);
+  border-radius: 4px;
+}
+
+.promo__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+}

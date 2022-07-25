@@ -1,0 +1,27 @@
+.form-callback {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-light-text);
+}
+
+.form-callback__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.form-callback__main-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-callback__agreement {
+  margin-bottom: 30px;
+}
+
+.form-callback__btn {
+  align-self: center;
+}

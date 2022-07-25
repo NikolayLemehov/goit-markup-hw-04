@@ -1,0 +1,36 @@
+.footer {
+  padding: 60px 0;
+  color: var(--color-white);
+  background-color: var(--color-dark-bg);
+}
+
+.footer__container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  color: inherit;
+}
+
+.footer__address {
+  margin-bottom: 9px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.footer__contact-links {
+  line-height: 1.71;
+  color: var(--color-white-60);
+}
+
+.footer__col--pt {
+  padding-top: 12px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

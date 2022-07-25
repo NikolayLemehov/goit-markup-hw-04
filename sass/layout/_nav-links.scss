@@ -1,0 +1,37 @@
+.nav-links {
+  display: flex;
+  gap: 15px 50px;
+}
+
+.nav-links__link {
+  @extend %header-link;
+  position: relative;
+  display: block;
+  padding: 31px 0;
+  color: inherit;
+}
+
+.nav-links__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-active);
+  transform: scaleX(0);
+  opacity: 0;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-links__link.current::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.nav-links__link.current,
+.nav-links__link:hover,
+.nav-links__link:focus {
+  @extend %header-link-active;
+}

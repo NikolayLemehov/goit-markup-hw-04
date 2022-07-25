@@ -1,0 +1,34 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+  font-family: inherit;
+  padding: 10px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-active);
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-light-2);
+  color: var(--color-active);
+}
+
+.btn__icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  vertical-align: center;
+}

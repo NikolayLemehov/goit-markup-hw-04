@@ -1,0 +1,22 @@
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio__controls {
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.portfolio__list {
+  --gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.portfolio__item {
+  --columns: 3;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}

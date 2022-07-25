@@ -1,0 +1,25 @@
+.form-subscribe__row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-subscribe__submit-btn {
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: none;
+  color: var(--color-white);
+  background-color: var(--color-active);
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.form-subscribe__submit-btn:hover,
+.form-subscribe__submit-btn:focus {
+  color: var(--color-active);
+  background-color: var(--color-white);
+}

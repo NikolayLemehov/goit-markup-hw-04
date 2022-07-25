@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  min-height: 80px;
+  border-bottom: 1px solid var(--color-light-3);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: auto;
+}

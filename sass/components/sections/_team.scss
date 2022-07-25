@@ -1,0 +1,16 @@
+.team {
+  padding: 94px 0;
+  background-color: var(--color-light-2);
+}
+
+.team__list {
+  --gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.team__item {
+  --columns: 4;
+  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}

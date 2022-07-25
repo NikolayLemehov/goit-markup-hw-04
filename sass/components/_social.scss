@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: inherit;
+  background-color: var(--color-white-10);
+  transition: color var(--transition), background-color var(--transition);
+}
+
+.social--main .social__link {
+  color: var(--color-icon-1);
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: var(--color-white);
+  background-color: var(--color-active);
+}
+
+.social__svg {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+}
