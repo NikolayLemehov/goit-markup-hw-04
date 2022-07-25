@@ -272,7 +272,7 @@ p {
   padding: 200px 0;
   text-align: center;
   background-color: var(--color-dark-bg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero/hero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }

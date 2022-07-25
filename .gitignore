@@ -9,6 +9,7 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+package.json
 
 # Logs
 logs
