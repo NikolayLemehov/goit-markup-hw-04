@@ -16,10 +16,10 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: color $transition, background-color $transition;
-}
 
-.form-subscribe__submit-btn:hover,
-.form-subscribe__submit-btn:focus {
-  color: $color-active;
-  background-color: $color-white;
+  &:hover,
+  &:focus {
+    color: $color-active;
+    background-color: $color-white;
+  }
 }

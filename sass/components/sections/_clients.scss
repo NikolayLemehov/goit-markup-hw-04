@@ -11,12 +11,12 @@
   border-radius: 4px;
   color: $color-icon-1;
   transition: color $transition, border-color $transition;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: $color-active;
-  color: $color-active;
+  &:hover,
+  &:focus {
+    border-color: $color-active;
+    color: $color-active;
+  }
 }
 
 .clients__svg {

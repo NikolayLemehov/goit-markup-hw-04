@@ -8,10 +8,10 @@
   border-radius: 4px;
   transform: scale(1);
   transition: transform $transition;
-}
 
-[data-modal].is-hidden .modal {
-  transform: scale(0.9);
+  [data-modal].is-hidden & {
+    transform: scale(0.9);
+  }
 }
 
 .modal__close {
@@ -26,11 +26,11 @@
   background-color: transparent;
   transition: color $transition;
   cursor: pointer;
-}
 
-.modal__close:hover,
-.modal__close:focus {
-  color: $color-active;
+  &:hover,
+  &:focus {
+    color: $color-active;
+  }
 }
 
 .modal__close-svg {

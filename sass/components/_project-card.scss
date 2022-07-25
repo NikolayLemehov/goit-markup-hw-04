@@ -4,11 +4,11 @@
   text-decoration: none;
   color: inherit;
   transition: box-shadow $transition;
-}
 
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .project-card__img-wrapper {
@@ -28,12 +28,12 @@
   transform: translateY(100%);
   opacity: 0;
   transition: transform $transition, opacity $transition;
-}
 
-.project-card:hover .project-card__overlay,
-.project-card:focus .project-card__overlay {
-  transform: translateY(0);
-  opacity: 1;
+  .project-card:hover &,
+  .project-card:focus & {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .project-card__img-text {

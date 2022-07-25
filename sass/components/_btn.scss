@@ -18,12 +18,12 @@
   border-radius: 4px;
   cursor: pointer;
   transition: color $transition, background-color $transition;
-}
 
-.btn:hover,
-.btn:focus {
-  background-color: $color-light-2;
-  color: $color-active;
+  &:hover,
+  &:focus {
+    background-color: $color-light-2;
+    color: $color-active;
+  }
 }
 
 .btn__icon {

@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px 50px;
+
+  &--footer {
+    display: block;
+  }
 }
 
 .contact-links__link {
@@ -10,6 +14,11 @@
   align-items: center;
   gap: 10px;
   color: $color-light-text;
+
+  &:hover,
+  &:focus {
+    @extend %header-link-active;
+  }
 }
 
 .contact-links__icon {
@@ -17,15 +26,6 @@
   height: 16px;
 }
 
-.contact-links--footer {
-  display: block;
-}
-
 .contact-links__item--footer:not(:last-of-type) {
   margin-bottom: 9px;
-}
-
-.contact-links__link:hover,
-.contact-links__link:focus {
-  @extend %header-link-active;
 }
