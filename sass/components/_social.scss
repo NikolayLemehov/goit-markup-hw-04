@@ -4,7 +4,10 @@
 }
 
 .social__link {
+  --color-hover: $color-white;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -12,20 +15,22 @@
   background-color: rgba($color-white, 0.1);
   transition: color $transition, background-color $transition;
 
-  .social--main & {
+  .social--light & {
     color: $color-icon-1;
+  }
+
+  .social--dark & {
+    color: var(--color-hover);
+    transition: background-color $transition;
   }
 
   &:hover,
   &:focus {
-    color: $color-white;
+    color: var(--color-hover);
     background-color: $color-active;
   }
 }
 
 .social__svg {
   display: block;
-  margin: auto;
-  width: 20px;
-  height: 20px;
 }

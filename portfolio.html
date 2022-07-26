@@ -51,7 +51,7 @@
       </div>
     </header>
     <main>
-      <section class="portfolio">
+      <section class="portfolio section">
         <div class="portfolio__container container">
           <h1 class="visually-hidden">Портфолио</h1>
           <ul class="portfolio__controls tab-controls list">
@@ -303,10 +303,11 @@
           <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
           <ul class="footer__contact-links contact-links contact-links--footer list">
             <li class="contact-links__item contact-links__item--footer">
-              <a class="contact-links__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="contact-links__link contact-links__link--footer"
+                 href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
             <li class="contact-links__item contact-links__item--footer">
-              <a class="contact-links__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="contact-links__link contact-links__link--footer" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
         </div>
@@ -315,28 +316,28 @@
           <ul class="social list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="instagram">
-                <svg class="social__svg">
+                <svg class="social__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-insta"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="twitter">
-                <svg class="social__svg">
+                <svg class="social__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-twitter"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="facebook">
-                <svg class="social__svg">
+                <svg class="social__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-facebook"/>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="linkedin">
-                <svg class="social__svg">
+                <svg class="social__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-social-linkedin"/>
                 </svg>
               </a>
@@ -344,7 +345,7 @@
           </ul>
         </div>
         <div class="footer__col footer__col--pt">
-          <form class="form-subscribe">
+          <form class="form-subscribe" autocomplete="off">
             <div class="form-subscribe__group" role="group">
               <p class="footer__title">Подпишитесь на рассылку</p>
               <div class="form-subscribe__row">

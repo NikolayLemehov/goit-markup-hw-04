@@ -26,7 +26,6 @@
   outline: none;
   transition: border-color $transition;
 
-  .field-callback__label-wrapper:hover &,
   .field-callback__label-wrapper:focus-within & {
     border-color: $color-active;
   }
@@ -53,7 +52,6 @@
   color: $color-black;
   transition: color $transition;
 
-  .field-callback__label-wrapper:hover &,
   .field-callback__label-wrapper:focus-within & {
     color: $color-active;
   }

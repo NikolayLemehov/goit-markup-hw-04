@@ -6,7 +6,8 @@
 
 .footer__container {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .footer__logo {

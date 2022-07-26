@@ -5,6 +5,8 @@
 
 .clients__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid $color-icon-1;
@@ -21,7 +23,4 @@
 
 .clients__svg {
   display: block;
-  width: 106px;
-  height: 60px;
-  margin: auto;
 }
