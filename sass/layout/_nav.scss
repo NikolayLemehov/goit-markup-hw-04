@@ -1,8 +1,24 @@
 .nav {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 64px;
+
+  @media screen and (min-width: $vp-tab) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
-.nav__logo {
-  margin-right: 93px;
+.nav__contact-links {
+  @media screen and (max-width: ($vp-tab - 1)) {
+    margin-top: auto;
+  }
+}
+
+.nav__social {
+  &.social {
+    @media screen and (min-width: $vp-tab) {
+      display: none;
+    }
+  }
 }
