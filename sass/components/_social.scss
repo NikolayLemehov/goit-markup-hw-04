@@ -11,21 +11,23 @@
 }
 
 .social__item {
-  position: relative;
+  .header__menu-container & {
+    position: relative;
 
-  &:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: calc(var(--side-padding) * -1);
-    width: var(--divide-width);
-    background-color: rgba($color-main-text, 0.2);
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: calc(var(--side-padding) * -1);
+      width: var(--divide-width);
+      background-color: rgba($color-main-text, 0.2);
+    }
   }
 }
 
 .social__link {
-  --color-hover: $color-white;
+  --color-hover: #{$color-white};
   display: block;
   font-size: 13px;
   line-height: 1.32;
@@ -38,7 +40,7 @@
     line-height: 1.22;
   }
 
-  @media screen and (min-width: $vp-desk) {
+  @media screen and (min-width: $vp-tab) {
     display: flex;
     justify-content: center;
     align-items: center;
