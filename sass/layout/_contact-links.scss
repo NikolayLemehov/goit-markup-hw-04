@@ -1,6 +1,6 @@
 .contact-links {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 22px;
 
   @media screen and (min-width: $vp-mob) {
@@ -9,17 +9,17 @@
 
   @media screen and (min-width: $vp-tab) {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 10px;
-
-    &--footer {
-      display: block;
-    }
   }
 
   @media screen and (min-width: $vp-desk) {
-    flex-direction: row-reverse;
+    flex-direction: row ;
     gap: 30px;
+  }
+
+  &--footer {
+    display: block;
   }
 }
 
@@ -33,6 +33,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color $transition;
 
   @media screen and (max-width: ($vp-tab - 1)) {
     .header__menu-container & {
@@ -57,7 +58,6 @@
   @media screen and (min-width: $vp-tab) {
     font-size: 12px;
     line-height: 1.14;
-    transition: color $transition;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -77,9 +77,16 @@
   }
 
   &--footer {
+    color: $color-light-text;
+
+    &:hover,
+    &:focus {
+      color: $color-active;
+    }
+
     @media screen and (min-width: $vp-tab) {
-      padding: 0;
-      line-height: inherit;
+      //padding: 0;
+      //line-height: inherit;
     }
   }
 }

@@ -6,6 +6,13 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: color $transition;
+
+    &:hover,
+    &:focus {
+      color: $color-active;
+    }
   }
 
   @media screen and (min-width: $vp-tab) {
