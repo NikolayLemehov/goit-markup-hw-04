@@ -706,10 +706,18 @@ img {
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+  color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .promo-card__title {
@@ -717,7 +725,13 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .promo-card__title {
+    text-align: left;
+  }
 }
 
 .promo-card__desc {
@@ -764,15 +778,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+}
+@media screen and (min-width: 768px) {
+  .tab-controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .tab-controls__btn {
@@ -797,7 +815,13 @@ img {
 }
 
 .project-card {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
   text-decoration: none;
   color: inherit;
@@ -850,7 +874,10 @@ img {
 }
 
 .project-card__desc {
-  padding: 20px 24px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 19px 23px;
   border: 1px solid #eee;
   border-top-color: transparent;
 }
@@ -1292,7 +1319,7 @@ img {
 }
 
 .hero__title {
-  max-width: 796px;
+  max-width: 360px;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -1306,6 +1333,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
+    max-width: 796px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1379,7 +1407,32 @@ img {
 
 .we-do__item {
   --columns: 3;
+  position: relative;
   width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+}
+
+.we-do__img-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .team {
@@ -1476,25 +1529,51 @@ img {
 }
 
 .portfolio__controls {
-  margin-bottom: 50px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__controls {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__controls {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__list {
   --gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: var(--gap);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: var(--gap);
+  }
 }
 
-.portfolio__item {
-  --columns: 3;
-  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: var(--gap);
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    --columns: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    --columns: 3;
+  }
 }/*# sourceMappingURL=main.css.map */

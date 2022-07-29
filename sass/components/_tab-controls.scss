@@ -1,11 +1,15 @@
 .tab-controls {
   display: flex;
-  justify-content: center;
-  column-gap: 10px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
+  @media screen and (min-width: $vp-tab) {
+    justify-content: center;
+  }
 }
 
 .tab-controls__btn {

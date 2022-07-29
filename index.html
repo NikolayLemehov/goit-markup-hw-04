@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
 
   <head>
     <meta charset="UTF-8"/>
@@ -28,13 +28,13 @@
           <nav class="header__nav nav">
             <ul class="nav__nav-links nav-links list">
               <li class="nav-links__item">
-                <a class="nav-links__link current" href="./index.html">Студия</a>
+                <a class="nav-links__link current" href="./index.html">Студія</a>
               </li>
               <li class="nav-links__item">
-                <a class="nav-links__link" href="./portfolio.html">Портфолио</a>
+                <a class="nav-links__link" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Контакты</a>
+                <a class="nav-links__link" href="#">Контакти</a>
               </li>
             </ul>
             <ul class="nav__contact-links contact-links list">
@@ -90,13 +90,13 @@
     <main>
       <section class="hero section">
         <div class="container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="promo section">
         <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+          <h2 class="visually-hidden">Наші перевиги</h2>
           <ul class="promo__list list">
             <li class="promo__item promo-card">
               <div class="promo__icon-wrapper">
@@ -104,9 +104,9 @@
                   <use href="./images/icons.svg#icon-promo-1"/>
                 </svg>
               </div>
-              <h3 class="promo-card__title">Внимание к деталям</h3>
+              <h3 class="promo-card__title">Увага до деталей</h3>
               <p class="promo-card__desc">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="promo__item promo-card">
@@ -115,9 +115,9 @@
                   <use href="./images/icons.svg#icon-promo-2"/>
                 </svg>
               </div>
-              <h3 class="promo-card__title">Пунктуальность</h3>
+              <h3 class="promo-card__title">Пунктуальність</h3>
               <p class="promo-card__desc">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="promo__item promo-card">
@@ -126,9 +126,9 @@
                   <use href="./images/icons.svg#icon-promo-3"/>
                 </svg>
               </div>
-              <h3 class="promo-card__title">Планирование</h3>
+              <h3 class="promo-card__title">Планування</h3>
               <p class="promo-card__desc">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="promo__item promo-card">
@@ -137,9 +137,9 @@
                   <use href="./images/icons.svg#icon-promo-4"/>
                 </svg>
               </div>
-              <h3 class="promo-card__title">Современные технологии</h3>
+              <h3 class="promo-card__title">Сучасні технології</h3>
               <p class="promo-card__desc">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -147,19 +147,40 @@
       </section>
       <section class="we-do section section--top-collapse">
         <div class="container">
-          <h2 class="we-do__title section__title">Чем мы занимаемся</h2>
+          <h2 class="we-do__title section__title">Чим ми займаємося</h2>
           <ul class="we-do__list list">
             <li class="we-do__item">
-              <img src="./images/about/img01.jpg" alt="Процесс кодинга продукта" title="Как мы кодим" width="370"
-                   class="we-do__img"/>
+              <img
+                class="we-do__img"
+                srcset="images/about/img01-1600w370.jpg 370w, images/about/img01-1600w370@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="images/about/img01-1600w370.jpg"
+                alt="Процес кодінгу продукту"/>
+              <p class="we-do__img-caption">
+                Десктопні додатки
+              </p>
             </li>
             <li class="we-do__item">
-              <img src="./images/about/img02.jpg" alt="Процесс тестирования продукта" title="Как тестируем продукт"
-                   width="370" class="we-do__img"/>
+              <img
+                class="we-do__img"
+                srcset="images/about/img02-1600w370.jpg 370w, images/about/img02-1600w370@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="images/about/img02-1600w370.jpg"
+                alt="Процес тестування продукту"/>
+              <p class="we-do__img-caption">
+                Мобільні додатки
+              </p>
             </li>
             <li class="we-do__item">
-              <img src="./images/about/img03.jpg" alt="Поиск нужного цвета дизайнером на планшете"
-                   title="Как составляем макеты" width="370" class="we-do__img"/>
+              <img
+                class="we-do__img"
+                srcset="images/about/img03-1600w370.jpg 370w, images/about/img03-1600w370@2x.jpg 740w"
+                sizes="(min-width: 1200px) 370px, 100vw"
+                src="images/about/img03-1600w370.jpg"
+                alt="Пошук потрібного кольору дизайнером на планшеті"/>
+              <p class="we-do__img-caption">
+                Дизайнерські рішення
+              </p>
             </li>
           </ul>
         </div>
@@ -353,7 +374,7 @@
       </section>
       <section class="clients section">
         <div class="container">
-          <h2 class="clients__title section__title">Постоянные клиенты</h2>
+          <h2 class="clients__title section__title">Постійні клієнти</h2>
           <ul class="clients__list list">
             <li class="clients__item">
               <a href="#" class="clients__link">
@@ -407,7 +428,7 @@
           <a class="footer__logo logo logo--white" href="./index.html">
             <span class="logo__accent">Web</span>Studio
           </a>
-          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
           <ul class="footer__contact-links contact-links contact-links--footer list">
             <li class="contact-links__item contact-links__item--footer">
               <a class="contact-links__link contact-links__link--footer"
@@ -419,7 +440,7 @@
           </ul>
         </div>
         <div class="footer__col">
-          <p class="footer__title">Присоединяйтесь</p>
+          <p class="footer__title">Приєднуйтесь</p>
           <ul class="social social--icon social--dark list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="instagram">
@@ -454,13 +475,13 @@
         <div class="footer__col">
           <form class="form-subscribe" autocomplete="off">
             <div class="form-subscribe__group" role="group">
-              <p class="footer__title">Подпишитесь на рассылку</p>
+              <p class="footer__title">Підпишіться на розсилку</p>
               <div class="form-subscribe__row">
                 <label class="form-subscribe__field field-subscribe">
                   <input class="field-subscribe__input" type="email" name="email" placeholder="E-mail">
                 </label>
                 <button class="form-subscribe__btn btn" type="submit">
-                  Подписаться
+                  Підписатися
                   <svg class="btn__icon">
                     <use href="./images/icons.svg#icon-send"/>
                   </svg>
@@ -480,12 +501,12 @@
             </svg>
           </button>
           <form class="form-callback" autocomplete="off">
-            <h2 class="form-callback__title">Оставьте свои данные, мы вам перезвоним</h2>
+            <h2 class="form-callback__title">Залиште свої дані, ми вам передзвонимо</h2>
             <div class="form-callback__main-group">
               <div class="form-callback__field field-callback">
                 <label class="field-callback__label-wrapper">
                   <input type="text" class="field-callback__input" name="name">
-                  <span class="field-callback__label">Имя</span>
+                  <span class="field-callback__label">Ім'я</span>
                   <svg class="field-callback__icon">
                     <use href="./images/icons.svg#icon-form-person"/>
                   </svg>
@@ -503,7 +524,7 @@
               <div class="form-callback__field field-callback">
                 <label class="field-callback__label-wrapper">
                   <input type="email" class="field-callback__input" name="email">
-                  <span class="field-callback__label">Почта</span>
+                  <span class="field-callback__label">Пошта</span>
                   <svg class="field-callback__icon">
                     <use href="./images/icons.svg#icon-form-email"/>
                   </svg>
@@ -512,8 +533,8 @@
               <div class="form-callback__field field-callback">
                 <label class="field-callback__label-wrapper">
                 <textarea class="field-callback__input field-callback__input--text-area" name="comment"
-                          placeholder="Введите текст"></textarea>
-                  <span class="field-callback__label">Комментарии</span>
+                          placeholder="Введіть текст"></textarea>
+                  <span class="field-callback__label">Коментар</span>
                 </label>
               </div>
             </div>
@@ -529,13 +550,13 @@
                   </svg>
                 </span>
                 <span class="checkbox-callback__label">
-                  Соглашаюсь с рассылкой и принимаю
+                  Погоджуюся з розсилкою та приймаю
                 </span>
               </label>
-              <a class="checkbox-callback__link" href="#" target="_blank">Условия договора</a>
+              <a class="checkbox-callback__link" href="#" target="_blank">Умови договору</a>
             </p>
             <button class="form-callback__btn btn">
-              Отправить
+              Відправити
             </button>
           </form>
         </div>

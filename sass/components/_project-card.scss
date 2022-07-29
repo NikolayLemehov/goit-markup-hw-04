@@ -1,5 +1,6 @@
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   text-decoration: none;
   color: inherit;
@@ -47,7 +48,8 @@
 }
 
 .project-card__desc {
-  padding: 20px 24px;
+  flex-grow: 1;
+  padding: 19px 23px;
   border: 1px solid #eee;
   border-top-color: transparent;
 }

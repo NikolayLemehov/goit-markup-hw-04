@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Портфолио" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content="Портфолио"/>
     <meta
       name="words"
       content="портфолио, дизайн, веб-студия, html, css, javascript, react, nodejs, сайт"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <title>Портфолио - WebStudio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -33,25 +33,16 @@
           <nav class="header__nav nav">
             <ul class="nav__nav-links nav-links list">
               <li class="nav-links__item">
-                <a class="nav-links__link" href="./index.html">Студия</a>
+                <a class="nav-links__link" href="./index.html">Студія</a>
               </li>
               <li class="nav-links__item">
-                <a class="nav-links__link current" href="./portfolio.html">Портфолио</a>
+                <a class="nav-links__link current" href="./portfolio.html">Портфоліо</a>
               </li>
               <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Контакты</a>
+                <a class="nav-links__link" href="#">Контакти</a>
               </li>
             </ul>
             <ul class="nav__contact-links contact-links list">
-              <li class="contact-links__item">
-                <a class="contact-links__link contact-links__link--tel" href="tel:+380961111111">
-                  <svg class="contact-links__icon contact-links__icon--phone" width="10" height="14">
-                    <use class="contact-links__use contact-links__use--desk" href="./images/icons.svg#icon-phone"/>
-                    <use class="contact-links__use contact-links__use--mob" href="./images/icons.svg#icon-phone-mob"/>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
               <li class="contact-links__item">
                 <a class="contact-links__link contact-links__link--mail" href="mailto:info@devstudio.com">
                   <svg class="contact-links__icon contact-links__icon--email" width="14" height="10">
@@ -59,6 +50,15 @@
                     <use class="contact-links__use contact-links__use--mob" href="./images/icons.svg#icon-email-mob"/>
                   </svg>
                   info@devstudio.com
+                </a>
+              </li>
+              <li class="contact-links__item">
+                <a class="contact-links__link contact-links__link--tel" href="tel:+380961111111">
+                  <svg class="contact-links__icon contact-links__icon--phone" width="10" height="14">
+                    <use class="contact-links__use contact-links__use--desk" href="./images/icons.svg#icon-phone"/>
+                    <use class="contact-links__use contact-links__use--mob" href="./images/icons.svg#icon-phone-mob"/>
+                  </svg>
+                  +38 096 111 11 11
                 </a>
               </li>
             </ul>
@@ -101,10 +101,10 @@
               <button class="tab-controls__btn current" type="button">Все</button>
             </li>
             <li class="tab-controls__item">
-              <button class="tab-controls__btn" type="button">Веб-сайты</button>
+              <button class="tab-controls__btn" type="button">Веб-сайти</button>
             </li>
             <li class="tab-controls__item">
-              <button class="tab-controls__btn" type="button">Приложения</button>
+              <button class="tab-controls__btn" type="button">Додатки</button>
             </li>
             <li class="tab-controls__item">
               <button class="tab-controls__btn" type="button">Дизайн</button>
@@ -119,15 +119,15 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img01.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img01-1600w370.jpg 370w, images/portfolio/img01-768w354.jpg 354w, images/portfolio/img01-480w450.jpg 450w,
+                  images/portfolio/img01-1600w370@2x.jpg 740w, images/portfolio/img01-768w354@2x.jpg 708w, images/portfolio/img01-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img01-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
@@ -139,26 +139,24 @@
             </li>
             <li class="portfolio__item">
               <a class="project-card" href="#">
-                <div class="project-card">
-                  <div class="project-card__img-wrapper">
-                    <img
-                      class="project-card__img"
-                      src="./images/portfolio/img02.jpg"
-                      alt="Сотрудник"
-                      width="370"
-                    />
-                    <div class="project-card__overlay">
-                      <p class="project-card__img-text">
-                        Ресурс предлагает комплексные предложения с разным уровнем
-                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                        частном лице.
-                      </p>
-                    </div>
+                <div class="project-card__img-wrapper">
+                  <img
+                    class="project-card__img"
+                    srcset="images/portfolio/img02-1600w370.jpg 370w, images/portfolio/img02-768w354.jpg 354w, images/portfolio/img02-480w450.jpg 450w,
+                  images/portfolio/img02-1600w370@2x.jpg 740w, images/portfolio/img02-768w354@2x.jpg 708w, images/portfolio/img02-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img02-1600w370.jpg"
+                    alt="Проект"/>
+                  <div class="project-card__overlay">
+                    <p class="project-card__img-text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                    </p>
                   </div>
-                  <div class="project-card__desc">
-                    <h2 class="project-card__name">Постер New Orlean vs Golden Star</h2>
-                    <p class="project-card__type">Дизайн</p>
-                  </div>
+                </div>
+                <div class="project-card__desc">
+                  <h2 class="project-card__name">Постер New Orlean vs Golden Star</h2>
+                  <p class="project-card__type">Дизайн</p>
                 </div>
               </a>
             </li>
@@ -167,21 +165,21 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img03.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img03-1600w370.jpg 370w, images/portfolio/img03-768w354.jpg 354w, images/portfolio/img03-480w450.jpg 450w,
+                  images/portfolio/img03-1600w370@2x.jpg 740w, images/portfolio/img03-768w354@2x.jpg 708w, images/portfolio/img03-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img03-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
                 <div class="project-card__desc">
                   <h2 class="project-card__name">Ресторан Seafood</h2>
-                  <p class="project-card__type">Приложение</p>
+                  <p class="project-card__type">Додаток</p>
                 </div>
               </a>
             </li>
@@ -190,20 +188,20 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img04.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img04-1600w370.jpg 370w, images/portfolio/img04-768w354.jpg 354w, images/portfolio/img04-480w450.jpg 450w,
+                  images/portfolio/img04-1600w370@2x.jpg 740w, images/portfolio/img04-768w354@2x.jpg 708w, images/portfolio/img04-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img04-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
                 <div class="project-card__desc">
-                  <h2 class="project-card__name">Проект Prime</h2>
+                  <h2 class="project-card__name">Проєкт Prime</h2>
                   <p class="project-card__type">Маркетинг</p>
                 </div>
               </a>
@@ -213,21 +211,21 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img05.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img05-1600w370.jpg 370w, images/portfolio/img05-768w354.jpg 354w, images/portfolio/img05-480w450.jpg 450w,
+                  images/portfolio/img05-1600w370@2x.jpg 740w, images/portfolio/img05-768w354@2x.jpg 708w, images/portfolio/img05-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img05-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
                 <div class="project-card__desc">
-                  <h2 class="project-card__name">Проект Boxes</h2>
-                  <p class="project-card__type">Приложение</p>
+                  <h2 class="project-card__name">Проєкт Boxes</h2>
+                  <p class="project-card__type">Додаток</p>
                 </div>
               </a>
             </li>
@@ -236,15 +234,15 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img06.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img06-1600w370.jpg 370w, images/portfolio/img06-768w354.jpg 354w, images/portfolio/img06-480w450.jpg 450w,
+                  images/portfolio/img06-1600w370@2x.jpg 740w, images/portfolio/img06-768w354@2x.jpg 708w, images/portfolio/img06-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img06-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
@@ -259,15 +257,15 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img07.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img07-1600w370.jpg 370w, images/portfolio/img07-768w354.jpg 354w, images/portfolio/img07-480w450.jpg 450w,
+                  images/portfolio/img07-1600w370@2x.jpg 740w, images/portfolio/img07-768w354@2x.jpg 708w, images/portfolio/img07-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img07-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
@@ -282,15 +280,15 @@
                 <div class="project-card__img-wrapper">
                   <img
                     class="project-card__img"
-                    src="./images/portfolio/img08.jpg"
-                    alt="Сотрудник"
-                    width="370"
-                  />
+                    srcset="images/portfolio/img08-1600w370.jpg 370w, images/portfolio/img08-768w354.jpg 354w, images/portfolio/img08-480w450.jpg 450w,
+                  images/portfolio/img08-1600w370@2x.jpg 740w, images/portfolio/img08-768w354@2x.jpg 708w, images/portfolio/img08-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img08-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
@@ -303,32 +301,23 @@
             <li class="portfolio__item">
               <a class="project-card" href="#">
                 <div class="project-card__img-wrapper">
-                  <div class="project-card__img-wrapper">
-                    <img
-                      class="project-card__img"
-                      src="./images/portfolio/img09.jpg"
-                      alt="Сотрудник"
-                      width="370"
-                    />
-                    <div class="project-card__overlay">
-                      <p class="project-card__img-text">
-                        Ресурс предлагает комплексные предложения с разным уровнем
-                        функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                        частном лице.
-                      </p>
-                    </div>
-                  </div>
+                  <img
+                    class="project-card__img"
+                    srcset="images/portfolio/img09-1600w370.jpg 370w, images/portfolio/img09-768w354.jpg 354w, images/portfolio/img09-480w450.jpg 450w,
+                  images/portfolio/img09-1600w370@2x.jpg 740w, images/portfolio/img09-768w354@2x.jpg 708w, images/portfolio/img09-480w450@2x.jpg 900w"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    src="images/portfolio/img09-1600w370.jpg"
+                    alt="Проект"/>
                   <div class="project-card__overlay">
                     <p class="project-card__img-text">
-                      Ресурс предлагает комплексные предложения с разным уровнем
-                      функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или
-                      частном лице.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
+                      відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
                     </p>
                   </div>
                 </div>
                 <div class="project-card__desc">
                   <p class="project-card__name">Growing Business</p>
-                  <p class="project-card__type">Приложение</p>
+                  <p class="project-card__type">Додаток</p>
                 </div>
               </a>
             </li>
@@ -342,7 +331,7 @@
           <a class="footer__logo logo logo--white" href="./index.html">
             <span class="logo__accent">Web</span>Studio
           </a>
-          <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+          <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
           <ul class="footer__contact-links contact-links contact-links--footer list">
             <li class="contact-links__item contact-links__item--footer">
               <a class="contact-links__link contact-links__link--footer"
@@ -354,7 +343,7 @@
           </ul>
         </div>
         <div class="footer__col">
-          <p class="footer__title">Присоединяйтесь</p>
+          <p class="footer__title">Приєднуйтесь</p>
           <ul class="social social--icon social--dark list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="instagram">
@@ -389,13 +378,13 @@
         <div class="footer__col">
           <form class="form-subscribe" autocomplete="off">
             <div class="form-subscribe__group" role="group">
-              <p class="footer__title">Подпишитесь на рассылку</p>
+              <p class="footer__title">Підпишіться на розсилку</p>
               <div class="form-subscribe__row">
                 <label class="form-subscribe__field field-subscribe">
                   <input class="field-subscribe__input" type="email" name="email" placeholder="E-mail">
                 </label>
                 <button class="form-subscribe__btn btn" type="submit">
-                  Подписаться
+                  Підписатися
                   <svg class="btn__icon">
                     <use href="./images/icons.svg#icon-send"/>
                   </svg>
@@ -406,5 +395,75 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop__modal">
+        <div class="modal">
+          <button class="modal__close" type="button" data-modal-close>
+            <svg class="modal__close-svg">
+              <use href="./images/icons.svg#icon-close"/>
+            </svg>
+          </button>
+          <form class="form-callback" autocomplete="off">
+            <h2 class="form-callback__title">Залиште свої дані, ми вам передзвонимо</h2>
+            <div class="form-callback__main-group">
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <input type="text" class="field-callback__input" name="name">
+                  <span class="field-callback__label">Ім'я</span>
+                  <svg class="field-callback__icon">
+                    <use href="./images/icons.svg#icon-form-person"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <input type="tel" class="field-callback__input" name="phone">
+                  <span class="field-callback__label">Телефон</span>
+                  <svg class="field-callback__icon">
+                    <use href="./images/icons.svg#icon-form-phone"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                  <input type="email" class="field-callback__input" name="email">
+                  <span class="field-callback__label">Пошта</span>
+                  <svg class="field-callback__icon">
+                    <use href="./images/icons.svg#icon-form-email"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="form-callback__field field-callback">
+                <label class="field-callback__label-wrapper">
+                <textarea class="field-callback__input field-callback__input--text-area" name="comment"
+                          placeholder="Введіть текст"></textarea>
+                  <span class="field-callback__label">Коментар</span>
+                </label>
+              </div>
+            </div>
+            <p class="form-callback__agreement checkbox-callback">
+              <label class="checkbox-callback__label-wrapper">
+                <input class="checkbox-callback__input visually-hidden" type="checkbox" name="agreement">
+                <span class="checkbox-callback__icon">
+                  <svg class="checkbox-callback__svg checkbox-callback__svg--checked">
+                    <use href="./images/icons.svg#icon-form-checked"/>
+                  </svg>
+                  <svg class="checkbox-callback__svg checkbox-callback__svg--unchecked">
+                    <use href="./images/icons.svg#icon-form-unchecked"/>
+                  </svg>
+                </span>
+                <span class="checkbox-callback__label">
+                  Погоджуюся з розсилкою та приймаю
+                </span>
+              </label>
+              <a class="checkbox-callback__link" href="#" target="_blank">Умови договору</a>
+            </p>
+            <button class="form-callback__btn btn">
+              Відправити
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
