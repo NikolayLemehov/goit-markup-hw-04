@@ -5,10 +5,14 @@
 }
 
 .employee-card__content {
-  padding: 30px;
+  padding: 30px 30px 24px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  @media screen and (min-width: $vp-desk) {
+    padding-bottom: 30px;
+  }
 }
 
 .employee-card__name {

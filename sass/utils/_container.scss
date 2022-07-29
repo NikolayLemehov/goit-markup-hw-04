@@ -1,8 +1,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: $padding;
-  padding-left: $padding;
+  padding-right: $padding-container;
+  padding-left: $padding-container;
 
   @media screen and (min-width: $vp-mob) {
     width: $vp-mob;
