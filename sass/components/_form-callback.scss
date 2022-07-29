@@ -1,24 +1,30 @@
 .form-callback {
   display: flex;
   flex-direction: column;
-  color: $color-light-text;
 }
 
 .form-callback__title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+
+  @media screen and (min-width: $vp-desk) {
+    line-height: 1.15;
+  }
 }
 
 .form-callback__main-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 20px;
 }
 
 .form-callback__agreement {
+  display: inline-block;
+  text-align: center;
+  width: 425px;
   margin-bottom: 30px;
 }
 

@@ -13,8 +13,9 @@
   left: 0;
   transform: translateY(-100%);
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
+  color: $color-light-text;
 }
 
 .field-callback__input {
@@ -34,6 +35,8 @@
     height: 120px;
     padding-left: 16px;
     resize: none;
+    font-size: 12px;
+    line-height: 1.17;
   }
 
   &::placeholder {

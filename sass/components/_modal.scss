@@ -1,6 +1,6 @@
 .modal {
   position: relative;
-  width: 528px;
+  width: 450px;
   height: 581px;
   padding: 40px;
   background-color: $color-white;
@@ -11,6 +11,10 @@
 
   [data-modal].is-hidden & {
     transform: scale(0.9);
+  }
+
+  @media screen and (min-width: $vp-desk) {
+    width: 528px;
   }
 }
 

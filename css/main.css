@@ -897,7 +897,7 @@ img {
 
 .modal {
   position: relative;
-  width: 528px;
+  width: 450px;
   height: 581px;
   padding: 40px;
   background-color: #fff;
@@ -914,6 +914,11 @@ img {
 [data-modal].is-hidden .modal {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__close {
@@ -1058,14 +1063,18 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #757575;
 }
 
 .form-callback__title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .form-callback__title {
+    line-height: 1.15;
+  }
 }
 
 .form-callback__main-group {
@@ -1076,11 +1085,14 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 20px;
 }
 
 .form-callback__agreement {
+  display: inline-block;
+  text-align: center;
+  width: 425px;
   margin-bottom: 30px;
 }
 
@@ -1105,8 +1117,9 @@ img {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
+  color: #757575;
 }
 
 .field-callback__input {
@@ -1126,6 +1139,8 @@ img {
   height: 120px;
   padding-left: 16px;
   resize: none;
+  font-size: 12px;
+  line-height: 1.17;
 }
 .field-callback__input::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
