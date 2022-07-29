@@ -693,7 +693,12 @@ img {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section--top-collapse {
@@ -1236,14 +1241,49 @@ img {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/hero.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero/hero-480.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/hero-480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+@media (min-device-pixel-ratio: 2dppx), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero/hero-480@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/hero-480@2x.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero/hero-768.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/hero-768.jpg");
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2dppx), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero/hero-768@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/hero-768@2x.jpg");
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero/hero-1600.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/hero-1600.jpg");
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2dppx), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../../images/hero/hero-1600@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/hero/hero-1600@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
@@ -1252,27 +1292,48 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
 
 .promo__list {
   --gap: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: var(--gap);
 }
-
-.promo__item {
-  --columns: 4;
-  width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+@media screen and (min-width: 768px) {
+  .promo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: var(--gap);
+  }
+}
+@media screen and (max-width: 767px) {
+  .promo__item:not(:last-child) {
+    margin-bottom: var(--gap);
+  }
+}
+@media screen and (min-width: 768px) {
+  .promo__item {
+    --columns: 2;
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promo__item {
+    --columns: 4;
+  }
 }
 
 .promo__icon-wrapper {
@@ -1293,6 +1354,12 @@ img {
 
 .promo__icon {
   display: block;
+}
+
+@media screen and (max-width: 1199px) {
+  .we-do {
+    display: none;
+  }
 }
 
 .we-do__list {

@@ -1,3 +1,9 @@
+.we-do {
+  @media screen and (max-width: ($vp-desk - 1)) {
+    display: none;
+  }
+}
+
 .we-do__list {
   --gap: 30px;
   display: flex;
