@@ -585,9 +585,9 @@ img {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -733,10 +733,15 @@ img {
 }
 
 .employee-card__content {
-  padding: 30px;
+  padding: 30px 30px 24px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .employee-card__content {
+    padding-bottom: 30px;
+  }
 }
 
 .employee-card__name {
@@ -1378,11 +1383,47 @@ img {
 }
 
 .team {
-  padding: 94px 0;
+  padding: 60px 0;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0;
+  }
 }
 
 .team__list {
+  --gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: var(--gap);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: var(--gap);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    --columns: 2;
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    --columns: 4;
+  }
+}
+
+.clients__list {
   --gap: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1392,16 +1433,19 @@ img {
   gap: var(--gap);
 }
 
-.team__item {
-  --columns: 4;
+.clients__item {
+  --columns: 2;
   width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
 }
-
-.clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    --columns: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    --columns: 6;
+  }
 }
 
 .clients__link {
@@ -1414,7 +1458,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
