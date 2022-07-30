@@ -898,7 +898,6 @@ img {
 .modal {
   position: relative;
   width: 450px;
-  height: 581px;
   padding: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
@@ -1086,14 +1085,24 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .form-callback__main-group {
+    margin-bottom: 20px;
+  }
 }
 
 .form-callback__agreement {
-  display: inline-block;
-  text-align: center;
   width: 425px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .form-callback__agreement {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .form-callback__btn {
@@ -1139,8 +1148,13 @@ img {
   height: 120px;
   padding-left: 16px;
   resize: none;
-  font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.14;
+}
+@media screen and (min-width: 1200px) {
+  .field-callback__input--text-area {
+    font-size: 12px;
+    line-height: 1.17;
+  }
 }
 .field-callback__input::-webkit-input-placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -1177,10 +1191,16 @@ img {
 
 .checkbox-callback__label-wrapper {
   position: relative;
+  font-size: 12px;
   line-height: 1.71;
   color: #757575;
   cursor: pointer;
   vertical-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-callback__label-wrapper {
+    font-size: 14px;
+  }
 }
 
 .checkbox-callback__icon {
@@ -1226,6 +1246,12 @@ img {
   -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   outline: none;
+  font-size: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-callback__link {
+    font-size: 14px;
+  }
 }
 .checkbox-callback__link:hover, .checkbox-callback__link:focus {
   color: #000;

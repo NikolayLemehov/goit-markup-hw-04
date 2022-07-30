@@ -1,9 +1,14 @@
 .checkbox-callback__label-wrapper {
   position: relative;
+  font-size: 12px;
   line-height: 1.71;
   color: $color-light-text;
   cursor: pointer;
   vertical-align: center;
+
+  @media screen and (min-width: $vp-desk) {
+    font-size: 14px;
+  }
 }
 
 .checkbox-callback__icon {
@@ -51,6 +56,11 @@
   color: $color-active;
   transition: color $transition;
   outline: none;
+  font-size: 12px;
+
+  @media screen and (min-width: $vp-desk) {
+    font-size: 14px;
+  }
 
   &:hover,
   &:focus {

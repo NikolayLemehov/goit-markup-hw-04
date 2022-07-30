@@ -18,14 +18,22 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: $vp-desk) {
+    margin-bottom: 20px;
+  }
 }
 
 .form-callback__agreement {
-  display: inline-block;
-  text-align: center;
   width: 425px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $vp-desk) {
+    display: inline-block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .form-callback__btn {

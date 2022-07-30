@@ -35,8 +35,13 @@
     height: 120px;
     padding-left: 16px;
     resize: none;
-    font-size: 12px;
-    line-height: 1.17;
+    //font-size: 14px;
+    line-height: 1.14;
+
+    @media screen and (min-width: $vp-desk) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 
   &::placeholder {
