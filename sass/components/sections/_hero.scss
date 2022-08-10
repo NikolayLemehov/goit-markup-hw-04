@@ -6,33 +6,33 @@
   text-align: center;
   background-color: $color-dark-bg;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url("../../../images/hero/hero-480.jpg");
+  url("../images/hero/hero-480.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 
   @include retina {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../../../images/hero/hero-480@2x.jpg");
+    url("../images/hero/hero-480@2x.jpg");
   }
 
   @media screen and (min-width: ($vp-mob + 1)) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../../../images/hero/hero-768.jpg");
+    url("../images/hero/hero-768.jpg");
 
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../../../images/hero/hero-768@2x.jpg");
+      url("../images/hero/hero-768@2x.jpg");
     }
   }
 
   @media screen and (min-width: ($vp-tab + 1)) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url("../../../images/hero/hero-1600.jpg");
+    url("../images/hero/hero-1600.jpg");
 
     @include retina {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url("../../../images/hero/hero-1600@2x.jpg");
+      url("../images/hero/hero-1600@2x.jpg");
     }
   }
 
